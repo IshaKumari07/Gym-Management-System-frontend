@@ -1,0 +1,38 @@
+
+  <link rel="stylesheet" type="text/css" href="adminequipment.component.css">
+
+ <app-sidebar></app-sidebar>
+ <app-navbar2></app-navbar2>
+  
+ 
+ 
+  <div class="main">
+    <h1>Equipment Data</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Equipment Id</th>
+      <th>Equipment Name</th>
+      <th>Description</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of equipments">
+      <td>{{e.equipmentId}}</td>
+      <td>{{e.equipmentName}}</td>
+      <td>{{e.description}}</td>
+      <td><button >Edit</button></td>
+      <td><button (click)="deleteEquipment(e.equipmentId)">Delete</button></td>
+    </tr>
+  </tbody>
+  </table>
+  <br>
+  <br>
+
+   <a href="addequipment"> <button class="add">Add</button></a>
+  
+   
+ 
+</div>

@@ -1,0 +1,57 @@
+
+    
+<link rel="stylesheet" href="membership.component.css">
+
+<app-navbar></app-navbar>
+<div id="backimg" >
+    <video width="100%"  autoplay Loop muted>
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-a-guy-doing-exercise-at-the-gym-22960-large.mp4">
+      </video>
+</div>
+
+<br>
+<div id="text">
+    <h1>------------------- Membership -------------------</h1>
+    <p>Choose the plan you are suitable with and join us in this fitness journey </p>
+</div>
+
+<div class="container">
+  <div class="card" *ngFor="let m of memberships">
+    <div class="box">  
+      <div class="content" >
+     
+        <h3>{{m.memberName}}</h3>
+        <p>{{m.desc}}</p><br>
+        <p>{{m.payment}}</p><br>
+        <a href="/register">Register</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Professional</h3>
+        <p>No. of Trainer : 3</p><br>
+        <p>No. of Session : 6</p><br>
+        <p>Cost : 1000/-</p><br>
+        <a href="#">Register</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Ninja</h3>
+        <p> No. of Trainer : 7</p><br>
+        <p>No. of Session : 4</p><br>
+        <p>Cost : 1500/-</p><br>
+        <a href="#">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+

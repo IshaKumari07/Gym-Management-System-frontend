@@ -1,0 +1,38 @@
+
+    <link rel="stylesheet" href="equipment.component.css">
+
+
+   
+<app-navbar></app-navbar>
+   
+ 
+    <div class="back">
+        <video width="100%"  autoplay Loop muted>
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-silhouette-of-an-athlete-lifting-the-barbell-23657-large.mp4">
+        
+        </video>
+    </div>
+    
+ 
+    <br>
+    <div id="text">
+        <h1><b>------------------- Equipments -------------------</b></h1>
+    </div>
+ 
+   
+    <section class="policy-product">
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let equipment of equipments" class="col-md-4">
+                    <div class="policy-p-card">
+                        <div class="policy-img">
+                            <img [src]="equipment.imageUrl"  alt="Equipment Image">
+                        </div>
+                        <h2>{{ equipment.equipmentName }} </h2>
+                        <p>>{{ equipment.description }}</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="signup.component.css">
+    <div class="back" style="position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;">
+            <video width="100%" height="auto" autoplay Loop muted >
+              <source src="https://videos.pexels.com/video-files/5319760/5319760-sd_640_360_25fps.mp4" type="video/mp4">
+           
+            </video>
+        </div>
+    <section>
+        <div class="form-box" style="margin-top: 100px; margin-bottom: 5px;">
+            <div class="form-value">
+                <form (ngSubmit)="formSubmit()" [formGroup]="registerForm">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <input type="string" formControlName="name" placeholder="Enter your name" required>
+                        <label >Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="string" formControlName="email" placeholder="Enter your email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="string" formControlName="password" placeholder="Enter password" required>
+                        <label >Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="string" formControlName="role" placeholder="Enter role" required>
+                        <label >Role</label>
+                    </div>
+               
+                    <button type="submit">Register</button>
+                   <button type="button" style="margin-top: 10px;" (click)="registerForm.reset()">Clear</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,0 +1,96 @@
+
+  <link rel="stylesheet" type="text/css" href="addoffers.component.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<app-sidebar></app-sidebar>
+ 
+  <header>
+    <div class="container1">
+                <div class="navbar-right">
+                    <div class="menu">
+                        <ul>
+                            <li>Home</li>
+                            <li>Log Out</li>
+                       
+                        </ul>
+                    </div>
+                </div>
+      </div>
+</header>
+ 
+ 
+<div class="main">
+ 
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Add Data</span>
+        </div>
+    </div>
+    <form [formGroup]="offersForm">
+    <div class="row">
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Offer Id</label>
+            <input type="number" class="form-control" id="offerId" formControlName="offerId">  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Offer Name</label>
+            <input type="text" class="form-control" id="offerName" formControlName="offerName">  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="des" class="form-label">Description</label>
+            <input type="text" class="form-control" id="description" formControlName="description">
+            <div class="form-text"></div>
+ 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="location" class="form-label">RegistrationDeadLine</label>
+            <input type="text" class="form-control" id="registrationdeadline" formControlName="registrationdeadline">
+            <div class="form-text"></div>
+        </div>
+       
+ 
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="des" class="form-label">Status</label>
+                <input type="text" class="form-control" id="status" formControlName="status">
+                <div class="form-text"></div>
+   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="des" class="form-label">Schedule</label>
+                <input type="text" class="form-control" id="schedule" formControlName="schedule">
+                <div class="form-text"></div>
+   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="des" class="form-label">Payment</label>
+                <input type="text" class="form-control" id="payment" formControlName="payment">
+                <div class="form-text"></div>
+   
+            </div>
+        </div>
+ 
+   
+   
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="d-grid">
+                <button type="submit" (click)="addOffers()" class="btn ">Submit</button>
+            </div>
+        </div>
+    </div>
+</form> 
+</div>
+
+
+ 

@@ -1,0 +1,45 @@
+
+  <link rel="stylesheet" type="text/css" href="admintrainer.component.css">
+ 
+
+  <app-sidebar></app-sidebar>
+ 
+ 
+ 
+  <app-navbar2></app-navbar2>
+ 
+  <div class="main">
+    <h1>Trainer Data</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Trainer Id</th>
+      <th>Trainer Name</th>
+      <th>TrainerEmail</th>
+      <th>TrainerPhoneNumber</th>  
+      <th>TrainerSpecification</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of trainers">
+      <td>{{t.trainerId}}</td>
+      <td>{{t.trainerName}}</td>
+      <td>{{t.trainerEmail}}</td>
+      <td>{{t.trainerPhoneNumber}}</td>
+      <td>{{t.trainerSpecification}}</td>
+      <td><a href="updatetrainer"><button>Edit</button></a></td>
+      <td><button (click)="deleteTrainer(t.trainerId)">Delete</button></td>
+    </tr>
+  </tbody>
+  </table>
+
+
+  <br>
+  <br>
+  
+  <a href="addtrainer"><button class="add" >Add</button></a>
+ 
+</div>
+

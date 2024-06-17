@@ -1,0 +1,110 @@
+body
+{
+  font-family: "Lato", sans-serif;
+}
+.sidenav
+{
+  background: #10446c;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a
+{
+  color: #fff;
+  padding: 10px 15px 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.sidenav a:hover
+{
+  background: blue;
+}
+h2
+{
+  padding: 10px 15px 10px 16px;
+  color: #fff;
+  border-bottom-style: solid;
+   
+}
+.main
+{
+  background: #fefefe;
+  margin-left: 20%;
+  padding: 4px 10px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 30px;
+}
+ 
+/*Making responsive*/
+@media screen and (max-width: 600px)
+{
+  .sidenav
+  {
+    padding-top: 15px;
+    width: 155px;
+ 
+  }
+  .sidenav a
+  {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .main
+  {
+    margin-left: 32%;
+    font-size: 15px;
+  }
+  p
+  {
+    display: inline-block;
+  }
+}
+
+ 
+/*table*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 120px;
+   
+  }
+ 
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    color: black;
+  }
+ 
+  tr:nth-child(even) {
+    background-color: #77a3c5;
+  }
+  .main h1{
+    text-align: center;
+    color: black;
+  }
+  .main tr button{
+    background-color: rgb(82, 97, 144);
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold ;
+    color: white;
+  }
+  .add{
+    background-color: rgb(82, 97, 144);
+    border-radius: 18px;
+    width: 130px;
+    height: 36px;
+    color: white;
+    margin-left: 390px;
+  }

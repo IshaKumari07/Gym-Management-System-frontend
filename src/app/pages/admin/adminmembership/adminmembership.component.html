@@ -1,0 +1,45 @@
+
+  <link rel="stylesheet" type="text/css" href="adminmembership.component.css">
+
+  <app-sidebar></app-sidebar>
+ <app-navbar2></app-navbar2>
+  
+
+ 
+  <div class="main">
+    <h1>Membership Data</h1>
+    <table>
+      <thead>
+      <tr>
+        <th>Membership Id</th>
+        <th>Membership Name</th>
+        <th>Active</th>
+        <th>Description</th>
+        <th>Payment</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let membership of memberships">
+      <td>{{ membership.membershipId }}</td>
+      <td>{{ membership.memberName}}</td>
+      <td>{{ membership.active }}</td>
+      <td>{{ membership.desc}}</td>
+      <td>{{ membership.payment }}</td>
+      <td><button>Edit</button></td>
+      <td><button (click)="deleteMembership(membership.membershipId)">Delete</button></td>
+    </tr>
+  </tbody>
+  </table>
+  <br>
+  <br>
+
+   <a href="addmembership"> <button class="add">Add</button></a>
+  
+   
+ 
+</div>
+
+ 
+ 

@@ -1,0 +1,60 @@
+
+
+<!-- <div>
+    <h1>Hi, Welcome Back</h1>
+    <h3>Login Here</h3>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div *ngIf="error" class="error-message">{{ error }}</div>
+    <span>Don't have an account? <a href="/signup">Sign up</a></span>
+  </div> -->
+
+  <link rel="stylesheet" href="signin.component.css">
+ 
+ 
+  <div class="back" style="position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;">
+      <video width="100%" height="auto" autoplay Loop muted >
+        <source src="https://videos.pexels.com/video-files/5319747/5319747-sd_640_360_25fps.mp4" type="video/mp4">
+     
+      </video>
+  </div>
+    <section>
+ 
+        <div class="form-box">
+            <div class="form-value">
+               <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" formControlName="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="inputbox">
+                     <label for="password">Password</label>
+                     <input type="password" id="password" formControlName="password" placeholder="Enter your password" required>
+                    </div>
+                   
+                    <button type="submit">Log in</button>
+                     <div class="register">
+                        <p>Don't have a account ? <a href="/signup">Register</a></p>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

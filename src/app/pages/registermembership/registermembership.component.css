@@ -1,0 +1,32 @@
+.body{
+    height: 100%;
+    background-image: url('https://www.google.com/imgres?q=registration%20form%20background%20images%20hd&imgurl=https%3A%2F%2Fwoorise.com%2Fwp-content%2Fuploads%2F2021%2F03%2FOnline-event-registration.png&imgrefurl=https%3A%2F%2Fwoorise.com%2Ftemplates%2Fonline-event-registration-form&docid=USotQWvv98zhSM&tbnid=KfxM52sGiJqHhM&vet=12ahUKEwjfibacs8OFAxWMSmwGHTGKAg0QM3oECC0QAA..i&w=1600&h=800&hcb=2&ved=2ahUKEwjfibacs8OFAxWMSmwGHTGKAg0QM3oECC0QAA'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover; /* Make the background image cover the entire screen */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+}
+.container-fluid{
+    background-image: url("https://wallpapercave.com/wp/wp2639568.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+.container-fluid .fs-3{
+    color: black;
+    font-style: italic;
+}
+.row{
+    color: white;
+}
+.row .d-grid button{
+    background-color: black;
+    color: rgb(224, 224, 231);
+}
+.row .d-grid button:hover{
+    background-color: rgb(97, 101, 101);
+}
+.row .d-grid button:hover{
+    color: white;
+}
+ 
+ 

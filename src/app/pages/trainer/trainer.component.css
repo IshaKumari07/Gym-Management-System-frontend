@@ -1,0 +1,65 @@
+#backimg img{
+   
+    margin: -16px;
+        width:1261px;
+        height: 400px;
+        background-size: cover;
+    }
+    #text{
+        text-align: center;
+    }
+    .container{
+       height: 1000px;
+    }
+    .policy-p-card{
+        background: #ffffff;
+        width: 26%;
+        padding:0px 15px 0px ;
+        margin: 25px;
+        border-radius: 5px;
+        float: left;
+        background-color: #e4f4f7ad;
+       
+        
+        
+    }
+    .policy-img{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+       
+    }
+    .policy-img img{
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+        border-radius: 8px;
+        margin: 20px 5px;
+        
+    }
+    .policy-img img:hover{
+        transform: scale(1.2);
+    }
+    header{
+        margin: -20px ;
+        padding: 16px 28px ;
+        width: 1210px;
+        background:#0e0e0e;
+        height: 39px;
+      
+    }
+    .menu ul li{
+        padding: 0;
+        margin: 0;
+        list-style-type:none ;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 24px;
+        
+    }
+    .navbar-right{
+        float: right;
+    }
+    

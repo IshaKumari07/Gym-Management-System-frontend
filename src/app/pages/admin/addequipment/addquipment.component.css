@@ -1,0 +1,103 @@
+.sidenav
+{
+    background: #212121;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a
+{
+    color: #fff;
+    padding: 10px 15px 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.sidenav a:hover
+{
+    background: rgb(87, 87, 92);
+}
+h2
+{
+    padding: 10px 15px 10px 16px;
+    color: #fff;
+    border-bottom-style: solid;
+   
+}
+.main
+{
+    background: #fefefe;
+    margin-top: 5%;
+    margin-left: 40%;
+    padding: 4px 10px;
+    color: #171616;
+    display: inline-block;
+}
+ 
+/*Making responsive*/
+/* @media screen and (max-width: 600px)
+{
+    .sidenav
+    {
+        padding-top: 15px;
+        width: 155px;
+ 
+    }
+    .sidenav a
+    {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    .main
+    {
+        margin-left: 32%;
+        font-size: 15px;
+    }
+    p
+    {
+        display: inline-block;
+    }
+} */
+/*navbar*/
+header{
+    margin: -19px ;
+    padding: 34px 35px ;
+    width: 1290px;
+    background:#252626;
+    height: 5px;
+   
+ 
+}
+ 
+.menu ul li{
+    padding: 0;
+    margin: 0;
+    list-style-type:none ;
+    color: #f1e9e9;
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 24px;
+   
+   
+}
+.navbar-right{
+    float: right;
+}
+.container1 .logo img{
+    width: 50px;
+    height: 50px;
+}
+.row button{
+    background-color: rgb(50, 55, 55);
+    color: white;
+}
+.row{
+    width: 500px;
+}

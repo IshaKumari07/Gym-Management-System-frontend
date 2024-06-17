@@ -1,0 +1,44 @@
+
+    <link rel="stylesheet" href="trainer.component.css">
+
+    <app-navbar></app-navbar>
+ 
+    <div class="back">
+        <video width="100%"  autoplay Loop muted>
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-training-kickbox-at-the-gym-47758-large.mp4">
+        
+        </video>
+    </div>
+    
+   
+ 
+    <br>
+    <div id="text">
+        <h1><b>------------------- Get to know our Trainers -------------------</b></h1>
+    </div>
+ 
+   
+    <section class="policy-product">
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let trainer of trainers" class="col-md-4">
+                    <div class="policy-p-card">
+                      <div class="policy-img">
+                        <img [src]="trainer.imageUrl" alt="Img">
+                      </div>
+                      <br>
+                      <h2>{{ trainer.trainerName }}</h2>
+                      <p><b>Specification - {{ trainer.trainerSpecification }}</b></p>
+                      <p><b>Phone No - {{ trainer.trainerPhoneNumber }}</b></p>
+                      <p><b>Email - {{ trainer.trainerEmail }}</b></p>
+                    </div>
+                  </div>
+              
+               
+            </div>
+        </div>
+    </section>
+ 
+ 
+
+ 

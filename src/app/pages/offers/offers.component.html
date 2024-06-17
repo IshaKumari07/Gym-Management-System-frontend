@@ -1,0 +1,55 @@
+
+
+ <link rel="stylesheet" href="offers.component.css">
+
+ 
+<div class="body">
+ 
+ 
+  <div class="container"  >
+      <div class="card" *ngFor="let o of offers">
+          <div class="face face1">
+              <div class="content">
+                  <img src="https://findyourgym.ae/wp-content/uploads/2020/04/Special-offer.jpg" style="width: 700px;height: 100px;margin-left: 20px;border-radius: 60px;">
+                  <h3>{{o.offerName}}</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>{{o.description}} </p><br>
+                  <p>{{o.registrationdeadline}}</p>
+                  <p>{{o.payment}}</p>
+                      <!-- <a href="#">Get Started</a> -->
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                <img src="https://findyourgym.ae/wp-content/uploads/2020/04/Special-offer.jpg" style="width: 700px;height: 100px;margin-left: 20px;border-radius: 60px;">
+                  <h3>Flat 10% Off</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>Refer a friend and both of u get 10% off on your next membership renewal!</p>
+                      <a href="#">Get Started</a>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                <img src="https://findyourgym.ae/wp-content/uploads/2020/04/Special-offer.jpg" style="width: 700px;height: 100px;margin-left: 56px;border-radius: 60px;">
+                  <h3>Ninja Membership</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>Sign Up for our ninja membership and get a free fitness assessment session!</p>
+                      <a href="#">Get Started</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

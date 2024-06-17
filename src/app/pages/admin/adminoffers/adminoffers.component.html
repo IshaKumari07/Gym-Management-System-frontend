@@ -1,0 +1,49 @@
+
+  <link rel="stylesheet" type="text/css" href="adminoffers.component.css">
+
+<app-sidebar></app-sidebar>
+ 
+ 
+<app-navbar2></app-navbar2>
+ 
+ 
+  <div class="main">
+    <h1>Offers Data</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Offers Id</th>
+      <th>Offers Name</th>
+      <th>Description</th>
+      <th>Registrationdeadline</th>  
+      <th>Status</th>
+      <th>Schedule</th>
+      <th>Payment</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let o of offers">
+      <td>{{o.offerId}}</td>
+      <td>{{o.offerName}}</td>
+      <td>{{o.description}}</td>
+      <td>{{o.registrationdeadline}}</td>
+      <td>{{o.status}}</td>
+      <td>{{o.schedule}}</td>
+      <td>{{o.payment}}</td>
+      <td><button>Edit</button></td>
+      <td><button (click)="deleteOffer(o.offerId)">Delete</button></td>
+    </tr>
+   
+  </tbody>
+   
+  </table>
+  <br>
+  <br>
+
+   <a href="/addoffers"><button class="add">Add</button></a> 
+
+   
+ 
+</div>
